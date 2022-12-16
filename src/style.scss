@@ -1,0 +1,120 @@
+$mobile-view: 375px;
+$desktop-view: 1440px;
+
+// Colors
+
+// Primary
+
+$Light-cyan: hsl(193, 38%, 86%);
+$neon-green: hsl(150, 100%, 66%);
+
+// Neutral
+
+$grayish-blue: hsl(217, 19%, 38%);
+$dark-grayish-blue: hsl(217, 19%, 24%);
+$dark-blue: hsl(218, 23%, 16%);
+
+// Typography
+
+$font-size: 28px;
+
+body {
+  font-family: "Manrope", sans-serif;
+
+  // box-model stuff
+
+  display: grid;
+  place-content: center;
+  background-color: $dark-blue;
+}
+
+.advice {
+  // box-model stuff
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  max-width: 25rem;
+  padding: 2rem 1rem 0rem;
+  margin: 20vmax 1rem 10vmax;
+  border-radius: 0.8rem;
+  background-color: $dark-grayish-blue;
+
+  //   Typography
+  color: $Light-cyan;
+
+  &__id {
+    // Typography stuff
+    font-size: 1rem;
+    color: $neon-green;
+    letter-spacing: 3px;
+    font-weight: 600;
+
+    // Box-model stuff
+
+    margin-bottom: 0;
+  }
+  &__content {
+    // Typography stuff
+
+    line-height: 2.4rem;
+    font-size: $font-size;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  &__btn {
+    // box-model stuff
+
+    background-color: $neon-green;
+    border: none;
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    position: relative;
+    transform: translate(0, 50%);
+
+    // effects stuff
+    // &:hover {
+    //   box-shadow: 0 0 30px $neon-green;
+    // }
+    &:focus {
+      box-shadow: 0 0 15px $neon-green;
+    }
+    // misc
+    svg {
+      width: 1.75rem;
+    }
+  }
+
+  @media all and (min-width: $desktop-view) {
+    // .advice{
+
+    max-width: 35rem;
+    padding-bottom: .6rem;
+    margin-top: 15vmax;
+
+    &__content {
+
+      margin-bottom: 2.6rem;
+    }
+    &__divider {
+      width: 94%;
+      text-align: center;
+    }
+
+    &__btn {
+      width: 3.8rem;
+      height: 3.8rem;
+      transform: translate(0, 64%);
+      svg{
+        width: 1.5rem;
+      }
+    }
+  }
+}

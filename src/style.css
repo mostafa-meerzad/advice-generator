@@ -1,0 +1,75 @@
+body {
+  font-family: "Manrope", sans-serif;
+  display: grid;
+  place-content: center;
+  background-color: hsl(218deg, 23%, 16%);
+}
+
+.advice {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 25rem;
+  padding: 2rem 1rem 0rem;
+  margin: 20vmax 1rem 10vmax;
+  border-radius: 0.8rem;
+  background-color: hsl(217deg, 19%, 24%);
+  color: hsl(193deg, 38%, 86%);
+}
+.advice__id {
+  font-size: 1rem;
+  color: hsl(150deg, 100%, 66%);
+  letter-spacing: 3px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.advice__content {
+  line-height: 2.4rem;
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+}
+.advice__btn {
+  background-color: hsl(150deg, 100%, 66%);
+  border: none;
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  position: relative;
+  transform: translate(0, 50%);
+}
+.advice__btn:focus {
+  box-shadow: 0 0 15px hsl(150deg, 100%, 66%);
+}
+.advice__btn svg {
+  width: 1.75rem;
+}
+@media all and (min-width: 1440px) {
+  .advice {
+    max-width: 35rem;
+    padding-bottom: 0.6rem;
+    margin-top: 15vmax;
+  }
+  .advice__content {
+    margin-bottom: 2.6rem;
+  }
+  .advice__divider {
+    width: 94%;
+    text-align: center;
+  }
+  .advice__btn {
+    width: 3.8rem;
+    height: 3.8rem;
+    transform: translate(0, 64%);
+  }
+  .advice__btn svg {
+    width: 1.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
