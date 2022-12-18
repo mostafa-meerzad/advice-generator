@@ -56,7 +56,7 @@ body {
 .advice__btn svg {
   width: 1.75rem;
 }
-@media all and (min-width: 1240px) {
+@media all and (min-width: 1440px) {
   .advice {
     max-width: 40vmax;
     margin-top: 10vmax;
