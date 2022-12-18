@@ -44,7 +44,7 @@ body {
   // min-width: 15rem;
   max-width: 25rem;
   padding: 2rem 1rem 0rem;
-  margin: 25vmax auto 10vmax;
+  margin: 15vmax auto 10vmax;
   border-radius: 0.8rem;
   background-color: $dark-grayish-blue;
 
@@ -103,7 +103,7 @@ body {
 
   @media all and (min-width: $desktop-view) {
     max-width: 40vmax;
-    margin-top: 10vmax;
+    margin-top: 15vmax;
 
     &__text {
       margin-bottom: 2.8rem;

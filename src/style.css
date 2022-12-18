@@ -15,7 +15,7 @@ body {
   right: 0;
   max-width: 25rem;
   padding: 2rem 1rem 0rem;
-  margin: 25vmax auto 10vmax;
+  margin: 15vmax auto 10vmax;
   border-radius: 0.8rem;
   background-color: hsl(217deg, 19%, 24%);
   color: hsl(193deg, 38%, 86%);
@@ -59,7 +59,7 @@ body {
 @media all and (min-width: 1440px) {
   .advice {
     max-width: 40vmax;
-    margin-top: 10vmax;
+    margin-top: 15vmax;
   }
   .advice__text {
     margin-bottom: 2.8rem;
