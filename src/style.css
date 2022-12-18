@@ -76,14 +76,6 @@ body {
   }
 }
 
-div {
-  position: relative;
-}
-
-div span {
-  position: relative;
-}
-
 [data-loading=loading] {
   -webkit-animation: loading 1s infinite ease-in-out;
           animation: loading 1s infinite ease-in-out;
