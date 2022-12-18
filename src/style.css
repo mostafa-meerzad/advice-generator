@@ -59,7 +59,7 @@ body {
 @media all and (min-width: 1440px) {
   .advice {
     max-width: 40vmax;
-    margin-top: 10vmax;
+    margin-top: 15vmax;
   }
   .advice__text {
     margin-bottom: 2.8rem;
