@@ -1,1 +1,7 @@
-<svg width="444" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#4F5D74" d="M0 8h196v1H0zM248 8h196v1H248z"/><g transform="translate(212)" fill="#CEE3E9"><rect width="6" height="16" rx="3"/><rect x="14" width="6" height="16" rx="3"/></g></g></svg>
+<svg id="pattern-divider-desktop" xmlns="http://www.w3.org/2000/svg" width="444" height="16" viewBox="0 0 444 16">
+  <path id="Path_1" data-name="Path 1" d="M0,8H196V9H0ZM248,8H444V9H248Z" fill="#4f5d74" fill-rule="evenodd"/>
+  <g id="Group_1" data-name="Group 1" transform="translate(212)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="6" height="16" rx="3" fill="#cee3e9"/>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="6" height="16" rx="3" transform="translate(14)" fill="#cee3e9"/>
+  </g>
+</svg>
