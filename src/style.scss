@@ -1,5 +1,6 @@
 $mobile-view: 375px;
-$desktop-view: 1440px;
+// $desktop-view: 1440px;
+$desktop-view: 1240px;
 
 // Colors
 
@@ -26,20 +27,25 @@ body {
   display: grid;
   place-content: center;
   background-color: $dark-blue;
+  // border: 2px solid red;
 }
 
 .advice {
   // box-model stuff
 
-  position: relative;
+  // position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: fit-content;
+  width: 86%;
+  // margin: 0 auto;
+  left: 0;
+  right: 0;
+  // min-width: 15rem;
   max-width: 25rem;
   padding: 2rem 1rem 0rem;
-  margin: 20vmax 1rem 10vmax;
+  margin: 25vmax auto 10vmax;
   border-radius: 0.8rem;
   background-color: $dark-grayish-blue;
 
@@ -57,7 +63,7 @@ body {
 
     margin-bottom: 0;
   }
-  &__content {
+  &__text {
     // Typography stuff
 
     line-height: 2.4rem;
@@ -65,56 +71,69 @@ body {
     font-weight: 800;
     text-align: center;
   }
+  &__divider {
+    width: 100%;
+
+    // make the divider-svg take the whole width of it's parent
+    * {
+      width: 100%;
+    }
+  }
 
   &__btn {
-    // box-model stuff
-
-    background-color: $neon-green;
-    border: none;
+    // Box-model stuff
     width: 4.8rem;
     height: 4.8rem;
-    border-radius: 50%;
     display: grid;
     place-content: center;
-    position: relative;
-    transform: translate(0, 50%);
+    background-color: $neon-green;
+    border: none;
+    border-radius: 50%;
+    // use translate instead of transform:translate  because Framer-motion
+    // is over writing transform rules;
+    translate: 0 50%;
 
-    // effects stuff
-    // &:hover {
-    //   box-shadow: 0 0 30px $neon-green;
-    // }
     &:focus {
       box-shadow: 0 0 15px $neon-green;
+      outline: none;
     }
-    // misc
     svg {
       width: 1.75rem;
     }
   }
 
   @media all and (min-width: $desktop-view) {
-    // .advice{
+    max-width: 40vmax;
+    margin-top: 10vmax;
 
-    max-width: 35rem;
-    padding-bottom: .6rem;
-    margin-top: 15vmax;
-
-    &__content {
-
-      margin-bottom: 2.6rem;
+    &__text {
+      margin-bottom: 2.8rem;
     }
     &__divider {
-      width: 94%;
       text-align: center;
     }
-
     &__btn {
-      width: 3.8rem;
-      height: 3.8rem;
-      transform: translate(0, 64%);
-      svg{
+      width: 3.9rem;
+      height: 3.9rem;
+      svg {
         width: 1.5rem;
       }
     }
+  }
+}
+
+[data-loading="loading"] {
+  animation: loading 1s infinite ease-in-out;
+}
+
+@keyframes loading {
+  0% {
+    box-shadow: 0 0 20px $neon-green;
+  }
+  50% {
+    box-shadow: 0 0 0px $neon-green;
+  }
+  100% {
+    box-shadow: 0 0 20px $neon-green;
   }
 }

@@ -6,17 +6,16 @@ body {
 }
 
 .advice {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 86%;
+  left: 0;
+  right: 0;
   max-width: 25rem;
   padding: 2rem 1rem 0rem;
-  margin: 20vmax 1rem 10vmax;
+  margin: 25vmax auto 10vmax;
   border-radius: 0.8rem;
   background-color: hsl(217deg, 19%, 24%);
   color: hsl(193deg, 38%, 86%);
@@ -28,48 +27,88 @@ body {
   font-weight: 600;
   margin-bottom: 0;
 }
-.advice__content {
+.advice__text {
   line-height: 2.4rem;
   font-size: 28px;
   font-weight: 800;
   text-align: center;
 }
+.advice__divider {
+  width: 100%;
+}
+.advice__divider * {
+  width: 100%;
+}
 .advice__btn {
-  background-color: hsl(150deg, 100%, 66%);
-  border: none;
   width: 4.8rem;
   height: 4.8rem;
-  border-radius: 50%;
   display: grid;
   place-content: center;
-  position: relative;
-  transform: translate(0, 50%);
+  background-color: hsl(150deg, 100%, 66%);
+  border: none;
+  border-radius: 50%;
+  translate: 0 50%;
 }
 .advice__btn:focus {
   box-shadow: 0 0 15px hsl(150deg, 100%, 66%);
+  outline: none;
 }
 .advice__btn svg {
   width: 1.75rem;
 }
-@media all and (min-width: 1440px) {
+@media all and (min-width: 1240px) {
   .advice {
-    max-width: 35rem;
-    padding-bottom: 0.6rem;
-    margin-top: 15vmax;
+    max-width: 40vmax;
+    margin-top: 10vmax;
   }
-  .advice__content {
-    margin-bottom: 2.6rem;
+  .advice__text {
+    margin-bottom: 2.8rem;
   }
   .advice__divider {
-    width: 94%;
     text-align: center;
   }
   .advice__btn {
-    width: 3.8rem;
-    height: 3.8rem;
-    transform: translate(0, 64%);
+    width: 3.9rem;
+    height: 3.9rem;
   }
   .advice__btn svg {
     width: 1.5rem;
+  }
+}
+
+div {
+  position: relative;
+}
+
+div span {
+  position: relative;
+}
+
+[data-loading=loading] {
+  -webkit-animation: loading 1s infinite ease-in-out;
+          animation: loading 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    box-shadow: 0 0 20px hsl(150deg, 100%, 66%);
+  }
+  50% {
+    box-shadow: 0 0 0px hsl(150deg, 100%, 66%);
+  }
+  100% {
+    box-shadow: 0 0 20px hsl(150deg, 100%, 66%);
+  }
+}
+
+@keyframes loading {
+  0% {
+    box-shadow: 0 0 20px hsl(150deg, 100%, 66%);
+  }
+  50% {
+    box-shadow: 0 0 0px hsl(150deg, 100%, 66%);
+  }
+  100% {
+    box-shadow: 0 0 20px hsl(150deg, 100%, 66%);
   }
 }/*# sourceMappingURL=style.css.map */
