@@ -32,16 +32,13 @@ body {
 .advice {
   // box-model stuff
 
-  // position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 86%;
-  // margin: 0 auto;
   left: 0;
   right: 0;
-  // min-width: 15rem;
   max-width: 25rem;
   padding: 2rem 1rem 0rem;
   margin: 15vmax auto 10vmax;
@@ -92,10 +89,7 @@ body {
     // is over writing transform rules;
     translate: 0 50%;
 
-    &:focus {
-      box-shadow: 0 0 15px $neon-green;
-      outline: none;
-    }
+ 
     svg {
       width: 1.75rem;
     }
@@ -116,6 +110,11 @@ body {
       height: 3.9rem;
       svg {
         width: 1.5rem;
+      }
+
+      &:focus {
+        box-shadow: 0 0 15px $neon-green;
+        outline: none;
       }
     }
   }
